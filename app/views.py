@@ -19,7 +19,7 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
-@app.route('/contact')
+@app.route('/contact', methods=['POST','GET'])
 def contact():
     """Render the website's contact page."""
     contactForm = ContactForm()
